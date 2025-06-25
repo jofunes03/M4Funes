@@ -1,0 +1,239 @@
+body {
+  font-family: 'futura', sans-serif;
+  color: #000;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover {
+    color: #f4b5a4;
+  }
+
+.diapo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+div#d01 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://jofunes03.github.io/Jofu/Imagenes/Recurso%201.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+div#d01 h1 {
+  font-size: 3rem; /* Tamaño del título */
+  margin-top: 60px;
+}
+
+div#d01 h2 {
+  margin-top: 0;
+}
+
+img {
+    max-height: 600px;
+}
+
+.d01 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: static;
+}
+
+.d02 {
+  display: flex; /* Activa Flexbox */
+  flex-direction: row; /* Alinea los elementos en una fila */
+  justify-content: space-between; /* Espacia los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 20px; /* Espaciado entre las columnas */
+}
+
+.d02 .texto {
+  flex: 1; /* Ocupa una columna */
+  padding: 20px; /* Añade espacio interno */
+}
+
+.texto {
+    padding: 20px;
+    margin-left: 30px;
+}
+
+div#d02 {
+    background-color: #891F2F;
+}
+
+.d02 {
+max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 20px; /* Añade espacio alrededor del contenido */
+  display: flex; /* Activa Flexbox */
+  flex-direction: row; /* Alinea los elementos en una fila */
+  justify-content: space-between; /* Espacia los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 20px; /* Espaciado entre las columnas */
+}
+
+.d02 img {
+  flex: 1; /* Ocupa la otra columna */
+  max-width: 100%; /* Asegura que la imagen no exceda su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.texto {
+  color: #f4e1a1; /* Color del texto */
+}
+
+.proyectos {
+  margin-right: 20px;
+  align-content: end;
+  border: 5px solid #f4b5a4;
+  background-color: #f4e1a1;
+  border-radius: 50px;
+  padding-top: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+}
+
+div#d03 {
+  background-color: #f4b5a4;
+}
+
+div#d04 {
+  flex-direction: column;
+  background-color: #f4e1a1;
+}
+
+.slider-contenedor {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+ 
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+ 
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.slide img {
+  display: block;
+  margin: auto; /* Centra la imagen dentro del contenedor */
+}
+ 
+.boton-anterior, .boton-siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+.boton-anterior {
+  left: 10px;
+}
+ 
+.boton-siguiente {
+  right: 10px;
+}
+
+div#d05 {
+  flex-direction: column;
+  background-color: #f4b5a4
+}
+
+div#d05 img {
+  width: 50%;
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.caja-texto {
+  width: 60%; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Centra el texto dentro de la caja */
+  font-size: 1.2rem;
+  color: #000; /* Color del texto */
+}
+
+h5 {margin: 0;}
+
+div#d05 p {
+  text-align: center; /* Centra el texto */
+  font-size: 1.2rem; /* Tamaño del texto */
+  color: #000; /* Color del texto */
+  margin-top: 20px; /* Espacio entre la imagen y el texto */
+}
+
+div#d05 h1 {
+  font-size: 3rem; /* Tamaño del título */
+}
+
+div#d06 {
+    background-image: url(https://jofunes03.github.io/Jofu/Imagenes/Recurso%201.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    font-family: 'futura', sans-serif; /* Aplica la fuente futura */
+    font-size: 3rem; /* Tamaño del texto */
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.Sitio a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #da6567; /* Color del texto */
+    font-family: 'futura', sans-serif; /* Fuente futura */
+    padding: 10px 20px; /* Espaciado interno */
+    border: 2px solid #da6567; /* Borde del recuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(244, 225, 161, 0.9); /* Fondo semitransparente */
+    display: inline-block; /* Asegura que se comporte como un botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.Sitio a:hover {
+    background-color: #da6567; /* Cambia el fondo al pasar el mouse */
+    color: #891F2F; /* Cambia el color del texto al pasar el mouse */
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device width, initial-scale=1.0">
+  <title>M3Funes</title>
+  <link rel="stylesheet" href="M3style.css">
+</head>
+<body>
+  <nav>
+    <a href="#d01">1</a>
+    <a href="#d02">2</a>
+    <a href="#d03">3</a>
+    <a href="#d04">4</a>
+    <a href="#d05">5</a>
+    <a href="#d06">6</a>
+  </nav>
+  
+  <div class="diapo" id="d01">
+     <img src="1x/Recurso 16.png" alt="Logo">
+     <h1>Momento 4</h1>
+     <h2>Portfolio digital</h2>
+    </div>
+
+  <div class="diapo" id="d02">
+    <div class="texto">
+      <h1>Diseño y Fundamentación</h1>
+      <p>Incluye una pantalla de bienvenida, luego se muestran mis servicios, más abajo se ven distintas “carpetas” (proyectos) y finalmente el footer muestra mi información de contacto. Incluye imagenes y textos breves, y el side-menu facilita el acceso a diferentes secciones.</p>
+    </div>
+      <div class="proyectos "><img src="1x/Recurso 11.png" alt="proyectos"></div>
+  </div>
+
+  <div class="diapo" id="d03">
+    <div class="wireframes"><img src="1x/Recurso 7.png" alt="wireframes"></div>
+  </div>
+
+  <div class="diapo" id="d04">
+    <h1>Proceso</h1>
+    <div class="slider-contenedor">
+      <div class="slider">
+        <div class="slide">
+          <img src="1x/Recurso 13.png" alt="primer">
+        </div>
+        <div class="slide">
+          <img src="1x/Recurso 14.png" alt="segundo">
+        </div>
+        <div class="slide">
+          <img src="1x/Recurso 12.png" alt="tercero">
+        </div>
+      </div>
+      <button class="boton-anterior" onclick="moverSlide(-1)">Anterior</button>
+      <button class="boton-siguiente" onclick="moverSlide(1)">Siguiente</button>
+    </div>
+  </div>
+
+  <div class="diapo" id="d05">
+    <p>Cifras de https://tarifario.org/</p>
+    <img src="1x/Recurso 15.png" alt="tabla">
+    <div class="caja-texto">
+      <p>Un programador principiante, como yo, cobraría entre un 25% y 40% del valor profesional, porque requiro más supervisión y ofrezco un producto final menos pulido que el de un profesional.</p>
+    </div>
+    <p>Por eso, mi cifra final es</p>
+    <h1>$120.000</h1>
+  </div>
+
+  <div class="diapo" id="d06">
+    <div class="Sitio" id="Sitio">
+        <a href="https://jofunes03.github.io/Jofu/index.html">¡Navega mi sitio!</a>
+    </div>
+
+  </div>
+
+<script src="slider.js">
+let indiceSlide = 0;
+
+function moverSlide(direccion) {
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+
+  // Actualiza el índice del slide
+  indiceSlide = (indiceSlide + direccion + totalSlides) % totalSlides;
+
+  // Mueve el slider al slide correspondiente
+  slider.style.transform = `translateX(-${indiceSlide * 100}%)`;
+}
+  </script>
+</body>
